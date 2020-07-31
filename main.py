@@ -2,7 +2,7 @@
 """
 Created on Fri Jun 12 16:29:00 2020
 
-Authors: Bhaswar Chakraborty and Anusha Tripathi
+Authors: Bhaswar Chakraborty (Ivan-Denisovich-py) and Anusha Tripathi (anusha-exe)
 """
 import pygame
 import random
