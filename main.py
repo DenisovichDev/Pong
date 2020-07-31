@@ -3,6 +3,8 @@
 Created on Fri Jun 12 16:29:00 2020
 
 Authors: Bhaswar Chakraborty (Ivan-Denisovich-py) and Anusha Tripathi (anusha-exe)
+
+Acknowledgements: Computerphile's video on pong with Dr. Isaac Triguero (https://youtu.be/JRLdbt7vK-E)
 """
 import pygame
 import random
@@ -183,10 +185,10 @@ sound_col2 = mixer.Sound('beep.wav')
 lose = mixer.Sound('Lost.wav')
 
 # =================== Machine Learning ======================= #
-#sample = open("game1.csv", "w")
-#print("x,y,vx,vy,FR,Paddle.y", file=sample)
+sample = open("game.csv", "w")
+print("x,y,vx,vy,FR,Paddle.y", file=sample)
 
-# pong = pd.read_csv("game1.csv")
+# pong = pd.read_csv("game.csv")
 # pong = pong.drop_duplicates()
 #
 # x = pong.drop(columns="Paddle.y")
@@ -246,7 +248,7 @@ def game_loop():
         if stop == 1:
             game_over()
 
-        #print("{},{},{},{},{},{}".format(ballplay.x, ballplay.y, ballplay.vx, ballplay.vy, FRAMERATE, player.y), file=sample)
+        print("{},{},{},{},{},{}".format(ballplay.x, ballplay.y, ballplay.vx, ballplay.vy, FRAMERATE, player.y), file=sample)
 
 
 game_loop()
